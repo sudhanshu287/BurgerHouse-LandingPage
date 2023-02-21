@@ -1,0 +1,68 @@
+.menuContainer{
+    color:var(--text-color);
+    margin-top: var(--section-margin-top);
+}
+.menuText{
+    background: var(--bg-color);
+    padding: 10px;
+    width:200px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+.sectionTitle{
+    margin-top: 1rem;
+}
+.sectionTitle h2{
+    font-size: 4rem;
+    text-align: center;
+}
+.sectionSubTitle{
+    text-align: center;
+    margin-top: 1rem;
+}
+.burgerMenuContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+}
+
+
+/* ------------------------For Medium Devices----------------------------- */
+@media only screen and (min-width:768px) and (max-width:1000px){
+    .sectionTitle h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .sectionSubTitle{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .burgerMenuContainer{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+
+/* ---------------------------For Smalll Devices------------------------------- */
+
+@media only screen and (max-width:668px){
+    .menuText{
+        width:180px;
+    }
+    .menuText p{
+        font-size: .8rem;
+    }
+    .sectionTitle h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .sectionSubTitle{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .burgerMenuContainer{
+        grid-template-columns: repeat(1,1fr);
+        gap:1rem;
+    }
+}
+

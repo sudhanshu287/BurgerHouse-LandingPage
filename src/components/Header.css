@@ -1,0 +1,232 @@
+.headerContainer {
+    display: flex;
+}
+
+.headerColumnText {
+    width: 50%;
+    color: var(--text-color);
+}
+
+.dashedBorder {
+    font-size: 1.2rem;
+    width: 75%;
+    padding: 10px;
+    border: 3px dashed var(--text-color);
+    font-weight: 400;
+    margin-left: 0.8rem;
+}
+
+.headerBigText {
+    font-size: 10rem;
+    text-shadow : 3px 3px 3px #fff, -2px -2px 2px #000 ;
+    font-weight: 700;
+}
+
+.headerMediumText {
+    font-size: 5rem;
+    font-weight: 500;
+    text-shadow : 2px 2px 1px #fff, -1px -1px 1px #000 ;
+}
+
+.headerColumnImage {
+    display: flex;
+    justify-content: end;
+    width: 45%;
+}
+
+.headerColumnImage img {
+    width: 90%;
+    background-color: var(--bg-color);
+}
+
+.priceTagBox {
+    position: absolute;
+    bottom: 9%;
+    left: 52%;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    background: red;
+    border-radius: 50%;
+    z-index: 1000;
+
+    -webkit-box-shadow: 21px 15px 50px -10px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 21px 15px 50px -10px rgba(255, 255, 255, 1);
+    box-shadow: 21px 15px 50px -10px rgba(255, 255, 255, 1);
+}
+
+.priceTag {
+    position: relative;
+    top: calc((110px - 100px));
+    left: calc((110px - 100px));
+    display: flex;
+    background: red;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px dashed #fff;
+}
+
+.price {
+    position: relative;
+    right: -15%;
+    bottom: -20%;
+}
+
+.priceValue {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.priceValue span {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.priceOnly {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* ------------------For Medium Devices--------------------- */
+@media only screen and (min-width: 768px) and (max-width: 912px) {
+    .dashedBorder {
+        font-size: 1rem;
+        padding: 8px;
+        margin-left: 0.1rem;
+    }
+    
+    .headerBigText {
+        font-size: 5rem;
+        font-weight: 500;
+    }
+    
+    .headerMediumText {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    
+    .headerColumnImage {
+        width: 50%;
+    }
+    .priceTagBox {
+        /* position: absolute; */
+        bottom: 56%;
+        left: 44%;
+        color: #fff;
+        width: 150px;
+        height: 150px;
+        background: red;
+        border-radius: 50%;
+        z-index: 1000;
+    
+        -webkit-box-shadow: 21px 15px 50px -10px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 21px 15px 50px -10px rgba(255, 255, 255, 1);
+        box-shadow: 21px 15px 50px -10px rgba(255, 255, 255, 1);
+    }
+    
+}
+
+/* ------------------------For Small Devices-------------------------- */
+
+@media only screen and (max-width: 668px) {
+    .headerContainer {
+        flex-direction: column-reverse;
+    }
+
+    .headerColumnText {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .headerColumnImage {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .headerColumnImage img {
+        width: 90%;
+    }
+
+    .dashedBorder {
+        font-size: 0.8rem;
+        width: 80%;
+        padding: 5px;
+        border: 2px dashed var(--text-color);
+        font-weight: 400;
+        margin-left: 0.4rem;
+    }
+
+    .headerBigText {
+        font-size: 5rem;
+        font-weight: 900;
+    }
+
+    .headerMediumText {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-left: 0.4rem;
+    }
+
+    .priceTagBox {
+        bottom: 2%;
+        left: 55%;
+    }
+}
+
+
+/* -------------------Below Small Devices------------------------- */
+@media only screen and (min-width:280px) and (max-width:370px){
+    .headerBigText{
+        font-size: 3.8rem;
+    }
+    .priceTagBox {
+        bottom: 10%;
+        left: 55%;
+        width: 120px;
+        height: 120px;
+    }
+    .priceTag {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .price {
+        position: relative;
+        right: -15%;
+        bottom: -20%;
+    }
+    
+    .priceValue {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    
+    .priceValue span {
+        font-size: .9rem;
+    }
+    
+    .priceOnly {
+        font-size: 1.2rem;
+    }
+}
+/* ----------------For NestHub Device--------------- */
+@media only screen and (min-width:1024px) and (max-width:1200px){
+    .headerBigText{
+        font-size: 7rem;
+    }
+}
+
+/* ---------------for NestHub Max Device--------------- */
+@media only screen and (min-width:1280px) and (max-width:1300px){
+    .headerBigText{
+        font-size: 8rem;
+    }
+    .priceTagBox {
+        bottom: 24%;
+        left: 50%;
+    }
+}

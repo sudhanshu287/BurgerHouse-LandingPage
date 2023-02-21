@@ -1,0 +1,54 @@
+.burgerMenu{
+    margin-top: 1rem;
+}
+.burgerMenuImage img{
+    width:100%;
+    /* height:auto; */
+}
+.burgerMenuDetail{
+    text-align: center;
+}
+.burgerMenuDetail h3{
+    font-size: 1.8rem;
+}
+.burgerMenuDetail p{
+    font-size: 1rem;
+}
+
+
+/* ------------------------For Medium Devices----------------------------- */
+@media only screen and (min-width:768px) and (max-width:1000px){}
+
+
+
+/* ---------------------------For Smalll Devices------------------------------- */
+
+@media only screen and (max-width:668px){
+    .burgerMenu{
+        margin-top: 1rem;
+    }
+    .burgerMenuImage{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .burgerMenuImage img{
+        width:100%;
+    }
+    .burgerMenuDetail{
+        text-align: center;
+    }
+    .burgerMenuDetail h3{
+        font-size: 1.8rem;
+    }
+    .burgerMenuDetail p{
+        font-size: 1rem;
+    }
+}
+
+/* --------------------For Galaxy Fold ----------------- */
+@media only screen and (min-width:280px) and (max-width:300px){
+    .burgerMenu{
+        margin-top: 1rem;
+    }
+}

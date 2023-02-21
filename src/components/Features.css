@@ -1,0 +1,86 @@
+.featuresContainer{
+    display: grid;
+    margin-top: var(--section-margin-top);
+    grid-template-columns: repeat(2,1fr);
+    gap:1.8rem;
+}
+.imageColumnFirst{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.floatingTextBox{
+    position: relative;
+    bottom: 90%;
+}
+.floatingText{
+    position: absolute;
+    color:#fff;
+    margin-left: 1rem;
+}
+.floatingTextSmall{
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.floatingTextBig{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+/* -----------------For Medium Devices------------------------ */
+@media only screen and (min-width:768px) and (max-width:1280px){
+    .featuresContainer{
+        grid-template-columns: 1fr 1fr;
+        gap:.8rem;
+    }
+    
+    .imageColumnFirst img{
+        width:100%;
+    }
+    .imageColumnSecond img{
+        width:100%;
+    }
+    .imageColumnThird img{
+        width:100%;
+    }
+    .floatingTextSmall{
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .floatingTextBig{
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+    
+}
+
+
+/* -----------------For Small Devices---------------------- */
+@media only screen and (max-width:667px){
+    .featuresContainer{
+        grid-template-columns: 1fr;
+        gap:1rem;
+    }
+    .imageColumnFirst{
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .imageColumnFirst img{
+        width:100%;
+        /* object-fit: cover; */
+    }
+    .imageColumnSecond img{
+        width:100%;
+    }
+    .imageColumnThird img{
+        width:100%;
+    }
+    .floatingTextSmall{
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .floatingTextBig{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,114 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: .8rem;
+    margin-top: 2rem;
+}
+.logo img{
+    width:100%;
+}
+.navContainer{
+    margin: 3rem 0;
+}
+.deliveryNumber{
+    display: flex;
+    justify-content: end;
+    color:var(--text-color);
+    margin-bottom: 1rem;
+}
+.deliveryNumber i{
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+.deliveryNumber div{
+    display: flex;
+    align-items: center;
+
+}
+.navList{
+    display: flex;
+}
+.navList li{
+    margin-left: 4rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.navList a{
+    color:var(--text-color);
+}
+.navList a:hover{
+    color:black;
+}
+#menu-icon{
+    display: none;
+    font-size: 40px;
+    color:var(--text-color);
+    cursor:pointer;
+    z-index: 10001;
+}
+/* ====================Medium Devices========================= */
+@media only screen and (min-width:768px) and (max-width:912px){
+    .logo img{
+        width:80%;
+    }
+    .navContainer{
+        margin:2rem 0;
+    }
+    .deliveryNumber i{
+        font-size: 1.5rem;
+    }
+    .navList li{
+        margin-left: .9rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+}
+
+/* ===============Small Device================ */
+@media only screen and (max-width:668px){
+    
+    .logo{
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .logo img{
+        width:60%;
+        height:auto;
+    }
+   
+    .navContainer{
+        display: none;
+        position:absolute;
+        background: var(--bg-color);
+        width:140px;
+        height:140px;
+        border-radius: 10px;
+        top:2%;
+        margin:3rem 0;
+        right:-100%;
+    }
+    /* .navContainer.open{
+        right:1%;
+    } */
+
+    .navList{
+        flex-direction: column;
+        
+    }
+    .navList li{
+        margin: 0 1rem;
+        padding:4px;
+        font-size: 1rem;
+    }
+    #menu-icon{
+        display: flex;
+        margin-top: 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    .deliveryNumber{
+        display: none;
+    }
+}
