@@ -9,5 +9,5 @@ Live Link of This Webpage(BurgerHouse) [Click Here](https://burger-house-landing
 #### Footer
 
 ### Preview Image
-![Alt text]()
+![Alt text](https://github.com/sudhanshu287/BurgerHouse-LandingPage/blob/main/src/assets/BurgerHousePreview.jpeg)
 💙 Made By Sudhanshu Patel.
