@@ -79,19 +79,21 @@
     }
    
     .navContainer{
-        display: none;
+        /* display: none; */
+        /* display: block; */
         position:absolute;
-        background: var(--bg-color);
+        background: white;
         width:140px;
         height:140px;
         border-radius: 10px;
         top:2%;
         margin:3rem 0;
+        padding-top: .8rem;
         right:-100%;
     }
-    /* .navContainer.open{
+    .navContainer.open{
         right:1%;
-    } */
+    }
 
     .navList{
         flex-direction: column;
